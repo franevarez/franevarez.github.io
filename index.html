@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,38 +11,50 @@
   <style>
     /* Fondo general */
     body {
-      background-image: url('/img/background.png'); /* reemplaza con la ruta correcta */
-    background-size: cover;           /* Ajusta el tamaño para cubrir todo el viewport */
-    background-repeat: no-repeat;     /* Evita que se repita */
-    background-position: center top;  /* Centra la imagen desde la parte superior */
-    background-attachment: fixed;     /* Opcional: para efecto tipo parallax */
+      background-image: url('/img/background.png');
+      /* reemplaza con la ruta correcta */
+      background-size: cover;
+      /* Ajusta el tamaño para cubrir todo el viewport */
+      background-repeat: no-repeat;
+      /* Evita que se repita */
+      background-position: center top;
+      /* Centra la imagen desde la parte superior */
+      background-attachment: fixed;
+      /* Opcional: para efecto tipo parallax */
       background-color: #f2f2f2;
       font-family: 'Open Sans', sans-serif;
-      padding-top: 50px; /* Espacio para el navbar fijo */
+      padding-top: 50px;
+      /* Espacio para el navbar fijo */
     }
+
     /* Navbar personalizado */
     .navbar-custom {
       background-color: #343a40;
     }
+
     .navbar-custom .navbar-brand,
     .navbar-custom .nav-link {
       color: #fff;
     }
+
     .navbar-custom .nav-link:hover {
       color: #ccc;
     }
+
     /* Secciones generales */
     .section {
       padding-top: 0px 0;
     }
+
     /* Sección de contenido con fondo blanco y sombras para resaltar */
     .section-bg {
       background-color: #fff;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       border-radius: 5px;
       margin-bottom: 20px;
       padding: 30px;
     }
+
     /* Fondo para la sección Hero */
     .hero-section {
       background: url('/img/header.png') no-repeat center center;
@@ -50,48 +63,69 @@
       padding: 120px 0;
       position: relative;
     }
+
     /* Capa semi-transparente para oscurecer el fondo y mejorar la legibilidad */
     .hero-section::before {
       content: "";
       position: absolute;
-      top: 0; left: 0; right: 0; bottom: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
       background: rgba(0, 0, 0, 0.5);
     }
+
     /* Aseguramos que el contenido de la sección Hero esté por encima de la capa */
     .hero-section .container {
       position: relative;
       z-index: 2;
     }
+
     /* Oculta por defecto la versión en inglés */
     .lang-es {
       display: none;
     }
-    .imgContainer{
-      float:left;
+
+    .imgContainer {
+      float: left;
     }
-    .imgCenter{
+
+    .imgCenter {
       display: block;
       margin: auto;
     }
-    /* .card-body{
-      height: 250px;
-    } */
+
+/* Selecciona únicamente los footers de tu sección de portfolio */
+    #portfolio .card-footer {
+      /* Altura fija – ajústala al tamaño que necesites */
+      height: 3rem;
+      
+      /* Centrar contenido vertical y horizontalmente */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      /* Quitar fondo/borde extra si quieres */
+      background-color: transparent;
+      border-top: none;
+    }
+
   </style>
 </head>
+
 <body>
   <!-- Navbar fijo con tu nombre y botón de idioma integrado -->
   <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
     <div class="container">
       <!-- Marca / Nombre -->
       <a class="navbar-brand" href="#">Francisco Javier Nevárez Bustamante</a>
-  
+
       <!-- Toggler (hamburguesa) -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse"
-              data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-              aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-  
+
       <!-- Enlaces colapsables -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
@@ -104,14 +138,14 @@
         </ul>
       </div>
 
-            <!-- Botón de cambio de idioma: siempre visible -->
-            <button id="toggleLang" class="btn btn-outline-light ml-auto mr-2">
-              Español
-            </button>
+      <!-- Botón de cambio de idioma: siempre visible -->
+      <button id="toggleLang" class="btn btn-outline-light ml-auto mr-2">
+        Español
+      </button>
     </div>
   </nav>
-  
-  
+
+
   <!-- Sección Hero / Principal -->
   <section id="hero" class="hero-section text-center">
     <div class="container">
@@ -129,7 +163,8 @@
       </div>
       <p>
         <strong>Contacto:</strong> franevarez@gmail.com | (+52) 618-180-5325 |
-        <a href="#" style="color: #fff;">LinkedIn</a> | <a href="#" style="color: #fff;">GitHub</a> | <a href="#" style="color: #fff;">WhatsApp</a>
+        <a href="#" style="color: #fff;">LinkedIn</a> | <a href="#" style="color: #fff;">GitHub</a> | <a href="#"
+          style="color: #fff;">WhatsApp</a>
       </p>
     </div>
   </section>
@@ -142,13 +177,17 @@
           <div class="lang-es">
             <h2>Sobre Mí</h2>
             <p>
-              Soy Ingeniero en Software con más de seis años desarrollando soluciones TI para empresas de alto nivel. He colaborado en proyectos críticos para Telmex, Grupo Carso y Valtech, especializándome en desarrollo Back-End, Salesforce, automatización de procesos y APIs empresariales.
+              Soy Ingeniero en Software con más de seis años desarrollando soluciones TI para empresas de alto nivel. He
+              colaborado en proyectos críticos para Telmex, Grupo Carso y Valtech, especializándome en desarrollo
+              Back-End, Salesforce, automatización de procesos y APIs empresariales.
             </p>
           </div>
           <div class="lang-en">
             <h2>About Me</h2>
             <p>
-              I'm a Software Engineer with over six years of experience delivering high-impact digital solutions. I've led development for Telmex, Grupo Carso, and Valtech clients, specializing in back-end development, Salesforce automation, and enterprise APIs.
+              I'm a Software Engineer with over six years of experience delivering high-impact digital solutions. I've
+              led development for Telmex, Grupo Carso, and Valtech clients, specializing in back-end development,
+              Salesforce automation, and enterprise APIs.
             </p>
           </div>
         </div>
@@ -164,13 +203,19 @@
   <section id="services" class="section">
     <div class="container section-bg">
       <div class="text-center mb-5">
-        <div class="lang-es"><h2>Servicios</h2></div>
-        <div class="lang-en"><h2>Services</h2></div>
+        <div class="lang-es">
+          <h2>Servicios</h2>
+        </div>
+        <div class="lang-en">
+          <h2>Services</h2>
+        </div>
       </div>
       <div class="row">
         <!-- Servicio 1 -->
         <div class="col-md-6">
-          <div><img alt="" style="height: 65px;z-index: -1;" src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Salesforce.com_logo.svg" class="rounded imgCenter"></div>
+          <div><img alt="" style="height: 65px;z-index: -1;"
+              src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Salesforce.com_logo.svg"
+              class="rounded imgCenter"></div>
           <div class="lang-es">
             <h4>Salesforce y Automatización</h4>
             <p>Desarrollo y automatización en Salesforce (CRM, flows, Apex, LWC).</p>
@@ -182,11 +227,15 @@
         </div>
         <!-- Servicio 2 -->
         <div class="col-md-6">
-          <div><img alt="" style="height: 65px;z-index: -1;" src="/img/javaLogo.png" class="rounded imgCenter"></div>
-          &nbsp;
-          <div><img  alt="" style="height: 45px;z-index: -1;" src="/img/springLogo.png" class="rounded imgCenter"></div>
-          <div><img  alt="" style="height: 45px;z-index: -1;" src="/img/pythonLogo.png" class="rounded imgCenter"></div>
-        </br>
+          <div class="row">
+            <div class="col-3"><img alt="" style="height: 65px;z-index: -1;padding-left: 32px;" src="/img/javaLogo.png"
+                class="img-fluid"></div>
+            <div class="col-4"><img alt="" style="height: 45px;z-index: -1;" src="/img/springLogo.png"
+                class="img-fluid"></div>
+            <div class="col-5"><img alt="" style="height: 45px;z-index: -1;" src="/img/pythonLogo.png"
+                class="img-fluid"></div>
+          </div>
+          </br>
           <div class="lang-es">
             <h4>Back-End en Java</h4>
             <p>Desarrollo Back-End robusto en Java (Spring Boot, Hibernate).</p>
@@ -198,7 +247,9 @@
         </div>
         <!-- Servicio 3 -->
         <div class="col-md-6 mt-4">
-          <div><img alt="" style="height: 65px;z-index: -1;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/WordPress_blue_logo.svg/512px-WordPress_blue_logo.svg.png" class="rounded imgCenter"></div>
+          <div><img alt="" style="height: 65px;z-index: -1;"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/WordPress_blue_logo.svg/512px-WordPress_blue_logo.svg.png"
+              class="rounded imgCenter"></div>
           <div class="lang-es">
             <h4>Sitios Web en WordPress</h4>
             <p>Desarrollo de sitios administrables en WordPress.</p>
@@ -210,7 +261,9 @@
         </div>
         <!-- Servicio 4 -->
         <div class="col-md-6 mt-4">
-          <div><img alt="" style="height: 65px;z-index: -1;" src="https://cdn-ajfbi.nitrocdn.com/GuYcnotRkcKfJXshTEEKnCZTOtUwxDnm/assets/images/optimized/rev-6b625e8/www.astera.com/wp-content/uploads/2020/01/rest-e1700637469894.png" class="rounded imgCenter"></div>
+          <div><img alt="" style="height: 65px;z-index: -1;"
+              src="https://cdn-ajfbi.nitrocdn.com/GuYcnotRkcKfJXshTEEKnCZTOtUwxDnm/assets/images/optimized/rev-6b625e8/www.astera.com/wp-content/uploads/2020/01/rest-e1700637469894.png"
+              class="rounded imgCenter"></div>
           <div class="lang-es">
             <h4>APIs y Servicios Cloud</h4>
             <p>
@@ -232,13 +285,17 @@
   <section id="experience" class="section">
     <div class="container section-bg">
       <div class="text-center mb-5">
-        <div class="lang-es"><h2>Experiencia Clave</h2></div>
-        <div class="lang-en"><h2>Key Experience</h2></div>
+        <div class="lang-es">
+          <h2>Experiencia Clave</h2>
+        </div>
+        <div class="lang-en">
+          <h2>Key Experience</h2>
+        </div>
       </div>
       <div class="row">
         <!-- Experiencia 1 -->
         <div class="col-md-4">
-          <div class="card mb-4">
+          <div class="card mb-4" style="height: 230px;">
             <div class="card-body">
               <div class="lang-es">
                 <h5 class="card-title">TELMEX / Grupo Carso</h5>
@@ -251,15 +308,19 @@
                 <p class="card-text">
                   Platform integration and automation of financial microservices.
                 </p>
+              </div>&nbsp;
+              <div><img alt="" style="height: 30px;z-index: -1;" src="/img/TelmexLogo.webp" class="rounded imgCenter">
               </div>
-              <div><img alt="" style="height: 15px;z-index: -1;" src="/img/TelmexLogo.webp" class="rounded imgCenter"></div>
-              <div><img alt="" style="height: 15px;z-index: -1;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Logo_de_Grupo_Carso.svg/960px-Logo_de_Grupo_Carso.svg.png" class="rounded imgCenter"></div>
+              &nbsp;
+              <div><img alt="" style="height: 30px;z-index: -1;"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Logo_de_Grupo_Carso.svg/960px-Logo_de_Grupo_Carso.svg.png"
+                  class="rounded imgCenter"></div>
             </div>
           </div>
         </div>
         <!-- Experiencia 2 -->
         <div class="col-md-4">
-          <div class="card mb-4">
+          <div class="card mb-4" style="height: 230px;">
             <div class="card-body">
               <div class="lang-es">
                 <h5 class="card-title">VALTECH</h5>
@@ -273,13 +334,16 @@
                   Salesforce CRM implementation and automation for real estate companies.
                 </p>
               </div>
-              <div><img alt="" style="height: 35px;z-index: -1;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Valtech_logo.png/800px-Valtech_logo.png?20141028061419" class="rounded imgCenter"></div>
+              &nbsp;
+              <div><img alt="" style="height: 35px;z-index: -1;"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Valtech_logo.png/800px-Valtech_logo.png?20141028061419"
+                  class="rounded imgCenter"></div>
             </div>
           </div>
         </div>
         <!-- Experiencia 3 -->
         <div class="col-md-4">
-          <div class="card mb-4">
+          <div class="card mb-4 " style="height: 230px;">
             <div class="card-body">
               <div class="lang-es">
                 <h5 class="card-title">Freelance Tools</h5>
@@ -328,51 +392,50 @@
         <div class="lang-en"><h2>Portfolio</h2></div>
       </div>
       <div class="row">
-        <!-- Ejemplo de portafolio 1 -->
-        <div class="col-md-4">
-          <div class="card mb-4" style="height: 370px;">
-            <img src="/img/CotizadorSalesforce.png" class="card-img-top" alt="Proyecto 1" />
-            <div class="card-body">
-              <div class="lang-es">
-                <h5 class="card-title">Capturas de Salesforce</h5>
-              </div>
-              <div class="lang-en">
-                <h5 class="card-title">Salesforce Screenshots</h5>
-              </div>
+        
+        <!-- Card 1 -->
+        <div class="col-md-4 d-flex">
+          <div class="card mb-4 w-100 d-flex flex-column">
+            <img src="/img/CotizadorSalesforce.png" class="card-img-top" alt="Proyecto 1">
+            <!-- este div “flex-grow-1” ocupa todo el espacio disponible -->
+            <div class="card-body flex-grow-1"></div>
+            <!-- footer siempre al fondo -->
+            <div class="card-footer text-center">
+              <div class="lang-es"><h5 class="mb-0">Capturas de Salesforce</h5></div>
+              <div class="lang-en"><h5 class="mb-0">Salesforce Screenshots</h5></div>
             </div>
           </div>
         </div>
-        <!-- Ejemplo de portafolio 2 -->
-        <div class="col-md-4">
-          <div class="card mb-4" style="height: 370px;">
-            <img src="/img/PromosTelmex.png" class="card-img-top" alt="Proyecto 2" />
-            <div class="card-body">
-              <div class="lang-es">
-                <h5 class="card-title">Administrador de promociones TELMEX</h5>
-              </div>
-              <div class="lang-en">
-                <h5 class="card-title">Promotion administrator TELMEX</h5>
-              </div>
+        
+        <!-- Card 2 -->
+        <div class="col-md-4 d-flex">
+          <div class="card mb-4 w-100 d-flex flex-column">
+            <img src="/img/PromosTelmex.png" class="card-img-top" alt="Proyecto 2">
+            <div class="card-body flex-grow-1"></div>
+            <div class="card-footer text-center">
+              <div class="lang-es"><h5 class="mb-0">Administrador de promociones TELMEX</h5></div>
+              <div class="lang-en"><h5 class="mb-0">Promotion administrator TELMEX</h5></div>
             </div>
           </div>
         </div>
-        <!-- Ejemplo de portafolio 3 -->
-        <div class="col-md-4">
-          <div class="card mb-4" style="height: 370px;">
-            <img src="/img/louisvilleladder.png" class="card-img-top" alt="louisvilleladder" />
-            <div class="card-body">
-              <div class="lang-es">
-                <h5 class="card-title">Sitios en WordPress (louisvilleladder)</h5>
-              </div>
-              <div class="lang-en">
-                <h5 class="card-title">WordPress Sites (louisvilleladder)</h5>
-              </div>
+        
+        <!-- Card 3 -->
+        <div class="col-md-4 d-flex">
+          <div class="card mb-4 w-100 d-flex flex-column">
+            <img src="/img/louisvilleladder.png" class="card-img-top" alt="Proyecto 3">
+            <div class="card-body flex-grow-1"></div>
+            <div class="card-footer text-center">
+              <div class="lang-es"><h5 class="mb-0">Sitios en WordPress<br>(louisvilleladder)</h5></div>
+              <div class="lang-en"><h5 class="mb-0">WordPress Sites<br>(louisvilleladder)</h5></div>
             </div>
           </div>
         </div>
+        
       </div>
     </div>
   </section>
+  
+  
 
   <!-- Sección Contacto -->
   <section id="contact" class="section">
@@ -454,4 +517,5 @@
     });
   </script>
 </body>
+
 </html>
