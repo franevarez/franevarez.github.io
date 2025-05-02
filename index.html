@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page - Francisco Javier Nevárez Bustamante</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- Fixed navbar with your name and integrated language button -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+    <div class="container">
+      <!-- Brand / Name -->
+      <a class="navbar-brand" href="#">Francisco Javier Nevárez Bustamante</a>
+
+      <!-- Toggler (hamburger menu) -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collapsible links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#hero">
+              <span class="lang-es">Inicio</span>
+              <span class="lang-en">Home</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">
+              <span class="lang-es">Sobre Mí</span>
+              <span class="lang-en">About Me</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">
+              <span class="lang-es">Servicios</span>
+              <span class="lang-en">Services</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experience">
+              <span class="lang-es">Experiencia</span>
+              <span class="lang-en">Experience</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">
+              <span class="lang-es">Portafolio</span>
+              <span class="lang-en">Portfolio</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">
+              <span class="lang-es">Contacto</span>
+              <span class="lang-en">Contact</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Language toggle button: always visible -->
+      <button id="toggleLang" class="btn btn-outline-light ml-auto mr-2">
+        Español
+      </button>
+    </div>
+  </nav>
+
+
+  <!-- Hero / Main Section -->
+  <section id="hero" class="hero-section text-center">
+    <div class="container">
+      <div class="lang-es">
+        <h1>Transformo ideas en soluciones tecnológicas escalables</h1>
+        <p class="lead">
+          +6 años de experiencia colaborando con empresas como Telmex, Grupo Carso y Valtech.
+        </p>
+      </div>
+      <div class="lang-en active">
+        <h1>Turning ideas into scalable digital solutions</h1>
+        <p class="lead">
+          6+ years of experience working with companies like Telmex, Grupo Carso, and Valtech.
+        </p>
+      </div>
+      <p>
+        <strong>
+          <span class="lang-es">Contacto:</span>
+          <span class="lang-en active">Contact:</span>
+        </strong>
+        <span id="email"></span> | 🇺🇸 <span id="phone-us"></span> | 🇲🇽 <span id="phone-mx"></span> |
+        <a href="www.linkedin.com/in/franevarez" style="color: #fff;">LinkedIn</a> | <a href="#" style="color: #fff;">WhatsApp</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="section" style="padding-top: 1%;">
+    <div class="container section-bg">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="lang-es">
+            <h2>Sobre Mí</h2>
+            <p>
+              Soy Ingeniero en Software con más de seis años desarrollando soluciones TI para empresas de alto nivel. He
+              colaborado en proyectos críticos para Telmex, Grupo Carso y Valtech, especializándome en desarrollo
+              Back-End, Salesforce, automatización de procesos y APIs empresariales.
+            </p>
+          </div>
+          <div class="lang-en active">
+            <h2>About Me</h2>
+            <p>
+              I'm a Software Engineer with over six years of experience delivering high-impact digital solutions. I've
+              led development for Telmex, Grupo Carso, and Valtech clients, specializing in back-end development,
+              Salesforce automation, and enterprise APIs.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <!-- Profile image -->
+          <img src="/img/photo.png" alt="Francisco Javier Nevárez Bustamante" class="img-fluid rounded" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section">
+    <div class="container section-bg">
+      <div class="text-center mb-5">
+        <div class="lang-es">
+          <h2>Servicios</h2>
+        </div>
+        <div class="lang-en active">
+          <h2>Services</h2>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Service 1 -->
+        <div class="col-md-6">
+          <div class="lang-es">
+            <h4>Salesforce y Automatización</h4>
+            <p>Desarrollo y automatización en Salesforce (CRM, flows, Apex, LWC).</p>
+          </div>
+          <div class="lang-en active">
+            <h4>Salesforce & Automation</h4>
+            <p>Salesforce development & automation (CRM, Flows, Apex, LWC).</p>
+          </div>
+          <div><img alt="" style="height: 65px;z-index: -1;"
+              src="https://upload.wikimedia.org/wikipedia/commons/f/f9/Salesforce.com_logo.svg"
+              class="rounded imgCenter"></div>
+        </div>
+        <!-- Service 2 -->
+        <div class="col-md-6">
+          <div class="lang-es">
+            <h4>Back-End en Java</h4>
+            <p>Desarrollo Back-End robusto en Java (Spring Boot, Hibernate).</p>
+          </div>
+          <div class="lang-en active">
+            <h4>Java Back-End Development</h4>
+            <p>Robust back-end development in Java (Spring Boot, Hibernate).</p>
+          </div>
+          <div class="row">
+            <div class="col-3"><img alt="" style="z-index: -1;padding-left: 32px;" src="/img/javaLogo.png"
+                class="img-fluid"></div>
+            <div class="col-4"><img alt="" style="z-index: -1;" src="/img/springLogo.png" class="img-fluid"></div>
+            <div class="col-5"><img alt="" style="z-index: -1;" src="/img/pythonLogo.png" class="img-fluid"></div>
+          </div>
+        </div>
+        <!-- Service 3 -->
+        <div class="col-md-6 mt-4">
+          <div class="lang-es">
+            <h4>Sitios Web en WordPress</h4>
+            <p>Desarrollo de sitios administrables en WordPress.</p>
+          </div>
+          <div class="lang-en active">
+            <h4>WordPress Development</h4>
+            <p>Development of manageable WordPress sites.</p>
+          </div>
+          <div><img alt="" style="height: 65px;z-index: -1;"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/WordPress_blue_logo.svg/512px-WordPress_blue_logo.svg.png"
+              class="rounded imgCenter"></div>
+        </div>
+        <!-- Service 4 -->
+        <div class="col-md-6 mt-4">
+          <div class="lang-es">
+            <h4>APIs y Servicios Cloud</h4>
+            <p>
+              Desarrollo y consumo de APIs REST/SOAP, integración con servicios cloud (AWS, Azure).
+            </p>
+          </div>
+          <div class="lang-en active">
+            <h4>APIs & Cloud Integration</h4>
+            <p>
+              REST/SOAP API development & integration with cloud services (AWS, Azure).
+            </p>
+          </div>
+          <div><img alt="" style="height: 65px;z-index: -1;"
+              src="https://cdn-ajfbi.nitrocdn.com/GuYcnotRkcKfJXshTEEKnCZTOtUwxDnm/assets/images/optimized/rev-6b625e8/www.astera.com/wp-content/uploads/2020/01/rest-e1700637469894.png"
+              class="rounded imgCenter"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Experiencia Clave -->
+  <section id="experience" class="section">
+    <div class="container section-bg">
+      <div class="text-center mb-5">
+        <div class="lang-es">
+          <h2>Experiencia Clave</h2>
+        </div>
+        <div class="lang-en">
+          <h2>Key Experience</h2>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Experiencia 1 -->
+        <div class="col-md-4">
+          <div class="card mb-4" style="height: 245px;">
+            <div class="card-body">
+              <div class="lang-es">
+                <h5 class="card-title">TELMEX / Grupo Carso</h5>
+                <p class="card-text">
+                  Integración de plataformas y automatización de microservicios financieros.
+                </p>
+              </div>
+              <div class="lang-en">
+                <h5 class="card-title">TELMEX / Grupo Carso</h5>
+                <p class="card-text">
+                  Platform integration and automation of financial microservices.
+                </p>
+              </div>&nbsp;
+              <div><img alt="" style="height: 30px;z-index: -1;" src="/img/TelmexLogo.webp" class="rounded imgCenter">
+              </div>
+              &nbsp;
+              <div><img alt="" style="height: 30px;z-index: -1;"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Logo_de_Grupo_Carso.svg/960px-Logo_de_Grupo_Carso.svg.png"
+                  class="rounded imgCenter"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Experiencia 2 -->
+        <div class="col-md-4">
+          <div class="card mb-4" style="height: 245px;">
+            <div class="card-body">
+              <div class="lang-es">
+                <h5 class="card-title">VALTECH</h5>
+                <p class="card-text">
+                  Implementación de CRM Salesforce y automatizaciones para empresas inmobiliarias.
+                </p>
+              </div>
+              <div class="lang-en">
+                <h5 class="card-title">VALTECH</h5>
+                <p class="card-text">
+                  Salesforce CRM implementation and automation for real estate companies.
+                </p>
+              </div>
+              &nbsp;
+              <div><img alt="" style="height: 35px;z-index: -1;"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Valtech_logo.png/800px-Valtech_logo.png?20141028061419"
+                  class="rounded imgCenter"></div>
+            </div>
+          </div>
+        </div>
+        <!-- Experiencia 3 -->
+        <div class="col-md-4">
+          <div class="card mb-4 " style="height: 245px;">
+            <div class="card-body">
+              <div class="lang-es">
+                <h5 class="card-title">Freelance Tools</h5>
+                <p class="card-text">
+                  Proyectos propios en Python para la administración y monitoreo de logs.
+                </p>
+              </div>
+              <div class="lang-en">
+                <h5 class="card-title">Freelance Tools</h5>
+                <p class="card-text">
+                  Personal projects in Python for log management and connection monitoring.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Tarifas y Disponibilidad -->
+  <section id="rates" class="section">
+    <div class="container section-bg text-center">
+      <div class="lang-es">
+        <h2>Tarifas y Disponibilidad</h2>
+        <p>
+          Tarifa estándar: <strong>70 USD por hora</strong>. Descuentos promocionales disponibles los primeros meses.
+          Modalidad flexible para proyectos fijos o por hora.
+        </p>
+      </div>
+      <div class="lang-en">
+        <h2>Rates & Availability</h2>
+        <p>
+          Standard rate: <strong>70 USD per hour</strong>. Promotional discounts available for the initial months.
+          Flexible terms for fixed projects or hourly billing.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Portafolio -->
+  <section id="portfolio" class="section">
+    <div class="container section-bg">
+      <div class="text-center mb-5">
+        <div class="lang-es">
+          <h2>Portafolio</h2>
+        </div>
+        <div class="lang-en">
+          <h2>Portfolio</h2>
+        </div>
+      </div>
+      <div class="row">
+
+        <!-- Card 1 -->
+        <div class="col-md-4 d-flex">
+          <div class="card mb-4 w-100 d-flex flex-column">
+            <img src="/img/CotizadorSalesforce.png" class="card-img-top" alt="Proyecto 1">
+            <!-- este div “flex-grow-1” ocupa todo el espacio disponible -->
+            <div class="card-body flex-grow-1"></div>
+            <!-- footer siempre al fondo -->
+            <div class="card-footer text-center">
+              <div class="lang-es">
+                <h5 class="mb-0">Capturas de Salesforce</h5>
+              </div>
+              <div class="lang-en">
+                <h5 class="mb-0">Salesforce Screenshots</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4 d-flex">
+          <div class="card mb-4 w-100 d-flex flex-column">
+            <img src="/img/PromosTelmex.png" class="card-img-top" alt="Proyecto 2">
+            <div class="card-body flex-grow-1"></div>
+            <div class="card-footer text-center">
+              <div class="lang-es">
+                <h5 class="mb-0">Administrador de promociones TELMEX</h5>
+              </div>
+              <div class="lang-en">
+                <h5 class="mb-0">Promotion administrator TELMEX</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4 d-flex">
+          <div class="card mb-4 w-100 d-flex flex-column">
+            <img src="/img/louisvilleladder.png" class="card-img-top" alt="Proyecto 3">
+            <div class="card-body flex-grow-1"></div>
+            <div class="card-footer text-center">
+              <div class="lang-es">
+                <h5 class="mb-0">Sitios en WordPress<br>(louisvilleladder)</h5>
+              </div>
+              <div class="lang-en">
+                <h5 class="mb-0">WordPress Sites<br>(louisvilleladder)</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Sección Contacto -->
+  <section id="contact" class="section">
+    <div class="container section-bg">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="lang-es">
+            <h2>Contacto</h2>
+            <p>
+              ¿Listo para llevar tu proyecto al siguiente nivel? Contáctame para una cotización sin compromiso.
+            </p>
+          </div>
+          <div class="lang-en">
+            <h2>Contact</h2>
+            <p>
+              Ready to take your project to the next level? Contact me for a free quote.
+            </p>
+          </div>
+          <ul class="list-unstyled">
+            <li><strong>Email:</strong> public@franciscotech.xyz</li>
+            <li><strong>Teléfono:</strong> (+52) 618-180-5325</li>
+            <li><strong>WhatsApp:</strong> <a href="#">Contactar</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <form id="contactForm" action="#" method="post">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Nombre / Name" required />
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Correo / Email" required />
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" rows="4" placeholder="Mensaje / Message" required></textarea>
+            </div>
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary">Enviar / Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección CTA -->
+  <section id="cta" class="section text-center">
+    <div class="container section-bg">
+      <div class="lang-es">
+        <h2>Confía en un profesional con experiencia comprobada en tecnología empresarial.</h2>
+      </div>
+      <div class="lang-en">
+        <h2>Trust a seasoned tech expert with a proven enterprise track record.</h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scripts: jQuery, Bootstrap y el JS para el toggle de idiomas -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+  <script src="/js/core.js"></script>
+</body>
+
+</html>

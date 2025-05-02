@@ -1,0 +1,115 @@
+/* General background */
+body, .lang-es, .lang-en {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-image: url('/img/background.png');
+  /* replace with the correct path */
+  background-size: cover;
+  /* Adjust the size to cover the entire viewport */
+  background-repeat: no-repeat;
+  /* Prevent it from repeating */
+  background-position: center top;
+  /* Center the image from the top */
+  background-attachment: fixed;
+  /* Optional: for a parallax-like effect */
+  background-color: #f2f2f2;
+  padding-top: 50px;
+  /* Space for the fixed navbar */
+}
+
+/* Custom navbar */
+.navbar-custom {
+  background-color: #343a40;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+  color: #fff;
+}
+
+.navbar-custom .nav-link:hover {
+  color: #ccc;
+}
+
+/* General sections */
+.section {
+  padding-top: 0px 0;
+}
+
+/* Content section with white background and shadows to highlight */
+.section-bg {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 30px;
+}
+
+/* Background for the Hero section */
+.hero-section {
+  background: url('/img/header.png') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  padding: 120px 0;
+  position: relative;
+}
+
+/* Semi-transparent layer to darken the background and improve readability */
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Ensure the content of the Hero section is above the layer */
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Ensure both language elements occupy the same space */
+.lang-es, .lang-en {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.lang-es.active, .lang-en.active {
+  position: static;
+  visibility: visible;
+  opacity: 1;
+}
+
+.imgContainer {
+  float: left;
+}
+
+.imgCenter {
+  display: block;
+  margin: auto;
+}
+
+/* Select only the footers of your portfolio section */
+#portfolio .card-footer {
+  /* Fixed height – adjust it to the size you need */
+  height: 3rem;
+  
+  /* Center content vertically and horizontally */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Remove extra background/border if desired */
+  background-color: transparent;
+  border-top: none;
+}
